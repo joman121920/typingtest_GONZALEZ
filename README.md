@@ -32,10 +32,10 @@ This table outlines the states and transitions for the deterministic finite auto
 | Current State | Input                | Next State |
 |---------------|----------------------|------------|
 | START         | Game starts           | WAITING    |
-| WAITING       | Click in input box    | TYPING     |
-| TYPING        | First key press       | TYPING     |
+| WAITING       | Type Character        | TYPING     |
+| TYPING        | Key press             | TYPING     |
 | TYPING        | Press Enter           | RESULT     |
 | RESULT        | Click Reset button    | RESET      |
-| RESET         | Game is reset         | WAITING    |
+| RESET         | Game is reset         | START      |
 
 
