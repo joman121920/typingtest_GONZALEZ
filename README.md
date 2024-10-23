@@ -26,3 +26,16 @@
 - **Preparing for Another Round**: After viewing the results, the player has the option to reset the game by clicking a **Reset** button. This triggers the **Reset** state, which clears the input box, generates a new sentence, and resets the timer.
 - **Back to Start**: The game then returns to the **Start** state, ready for the player to take on another typing challenge.
 
+
+This table outlines the states and transitions for the deterministic finite automaton (DFA) of the typing test game:
+
+| Current State | Input                | Next State |
+|---------------|----------------------|------------|
+| START         | Game starts           | WAITING    |
+| WAITING       | Click in input box    | TYPING     |
+| TYPING        | First key press       | TYPING     |
+| TYPING        | Press Enter           | RESULT     |
+| RESULT        | Click Reset button    | RESET      |
+| RESET         | Game is reset         | WAITING    |
+
+
